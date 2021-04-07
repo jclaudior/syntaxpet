@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body{
+    display: grid;
+    grid-template-areas: 
+    'HL'
+    'CL'
+    'FL';
+    height: 100hv;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-layout{
+    grid-area: HL;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    background: rgb(0, 163, 180);
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+}
+
+.header-layout .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.header-layout .content .logo-nav{
+    width: 100%;
+    height: 130px;  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header-layout .content .logo-nav img{
+      width: 20%;
+      height: 100%;
+}
+.header-layout .content .logo-nav nav{
+    width: 80%;
+}
+
+.header-layout .content .logo-nav ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-layout .content .logo-nav li{
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+.header-layout .content .logo-nav li a{
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    animation-delay: all 3s;
+}
+
+.carrinho{
+    padding-left: 35px!important;
+}
+
+.carrinho::before{
+    content: "";
+    background: url("../images/carrinho.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+
+.cadastro{
+    padding-left: 35px!important;
+}
+
+.cadastro::before{
+    content: "";
+    background: url("../images/user.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+.assinatura{
+    padding-left: 35px!important;
+}
+
+.assinatura::before{
+    content: "";
+    background: url("../images/assinatura.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+.adocao{
+    padding-left: 35px!important;
+}
+
+.adocao::before{
+    content: "";
+    background: url("../images/adocao.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+.contato{
+    padding-left: 35px!important;
+}
+
+.contato::before{
+    content: "";
+    background: url("../images/telefone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+.servico{
+    padding-left: 35px!important;
+}
+
+.servico::before{
+    content: "";
+    background: url("../images/petshop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+
+.produto{
+    padding-left: 35px!important;
+}
+
+.produto::before{
+    content: "";
+    background: url("../images/alimentacao-animal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+.home{
+    padding-left: 35px!important;
+}
+
+.home::before{
+    content: "";
+    background: url("../images/pet-house.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+
+.header-layout .content .logo-nav li a:hover{
+    border-bottom: 3px solid rgb(0, 51, 131);
+}
+
+
+.header-layout .content .search{
+    width: 100%;
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-layout .content .search input{
+    width: 600px;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 20px;
+}
+
+.header-layout .content .search input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.header-layout .content .search input::-webkit-input-placeholder{
+    font-size: 20px;
+    font-style: bold;
+}
+
+.header-layout .content .search a{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 131, 0);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.header-layout .content .search a:hover{
+    background-color:rgb(255, 177, 94);
+}
+
+.header-layout .content .search a::before{
+    content: "";
+    background: url("../images/lupa-de-pesquisa-b.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 7px;
+    top: 7px;
+}
+
+
+.content-layout{
+    grid-area: CL;
+    height: 900px;
+    background-color: rgb(255, 72, 0);
+}
+
+.footer-layout{
+    grid-area: FL;
+    height: 200px;
+    background: rgb(0, 163, 180);
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+}
+
+@media (max-width: 800px){
+    .header-layout{
+        height: 700px;
+    }
+
+    .header-layout .content .logo-nav{
+        height: 500px;
+        align-items: center;
+    }
+
+    .header-layout .content .logo-nav img{
+        width: 60%;
+        height: 30%;
+    }
+    .header-layout .content .search{
+        height: 100px;
+    }
+
+    .header-layout .content .logo-nav ul{
+        align-items: center;
+    }
+
+    .header-layout .content .logo-nav li{
+        margin: 5px 0px;
+        padding: 0px;
+        width: 50%;
+        align-items: center;
+    }
+
+    .header-layout .content .logo-nav li a{
+        font-size: x-large;
+    }
+
+    .header-layout .content .search input{
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 549px){
+
+
+    .header-layout .content .logo-nav li{
+        width: 100%;
+        padding: 0px 70px;
+        
+    }
+
+    
+}
