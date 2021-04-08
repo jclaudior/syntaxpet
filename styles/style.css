@@ -7,6 +7,20 @@ body{
     'FL';
     height: 100hv;
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar{
+    width:10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:rgb(255, 131, 0);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: rgb(0, 163, 180);
 }
 
 .header-layout{
@@ -204,7 +218,7 @@ body{
 
 
 .header-layout .content .logo-nav li a:hover{
-    border-bottom: 3px solid rgb(0, 51, 131);
+    border-bottom: 2px solid rgb(0, 51, 131);
 }
 
 
@@ -266,15 +280,67 @@ body{
 .content-layout{
     grid-area: CL;
     height: 900px;
-    background-color: rgb(255, 72, 0);
+    
 }
 
 .footer-layout{
     grid-area: FL;
-    height: 200px;
+    height: 500px;
     background: rgb(0, 163, 180);
     background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
 }
+
+.footer-layout div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.creditos{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.creditos ul{
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+}
+
+.creditos ul li{
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 15px;    
+}
+
+.creditos ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+.creditos ul li .git{
+    
+}
+
+.creditos ul li .git::after{
+    content: "";
+    background: url("../images/git.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
 
 @media (max-width: 800px){
     .header-layout{
