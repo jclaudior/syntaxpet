@@ -291,15 +291,20 @@ body::-webkit-scrollbar-track{
     padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
 }
 
 .footer-layout div{
-    width: 30%;
+    width: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.sobre p{
+    line-height: 30px;
+    width: 60%;
 }
 
 .creditos{
@@ -325,10 +330,6 @@ body::-webkit-scrollbar-track{
     margin: 5px;
 }
 
-.creditos ul li .git{
-    
-}
-
 .creditos ul li .git::after{
     content: "";
     background: url("../images/git.png");
@@ -339,6 +340,69 @@ body::-webkit-scrollbar-track{
     float: left;
     display: block;
     position: relative;
+}
+
+.sociais ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sociais ul li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.sociais ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.sociais ul li .face::before{
+    content: "";
+    background: url("../images/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.sociais ul li .insta::before{
+    content: "";
+    background: url("../images/instagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.sociais ul li .twitter::before{
+    content: "";
+    background: url("../images/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+@media  (max-width: 1230px){
+    .creditos{
+        border-left: 1px solid white;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        
+    }
 }
 
 
@@ -377,6 +441,18 @@ body::-webkit-scrollbar-track{
 
     .header-layout .content .search input{
         width: 400px;
+    }
+
+    .footer-layout{
+        height: 1000px;
+    }
+
+    .creditos{
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        
     }
 }
 
