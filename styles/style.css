@@ -278,9 +278,7 @@ body::-webkit-scrollbar-track{
 
 
 .content-layout{
-    grid-area: CL;
-    height: 900px;
-    
+    grid-area: CL;   
 }
 
 .footer-layout{
