@@ -2,9 +2,9 @@
 body{
     display: grid;
     grid-template-areas: 
-    'HL'
-    'CL'
-    'FL';
+    'HL HL'
+    'CL CL'
+    'FL FL';
     height: 100hv;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
