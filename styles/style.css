@@ -15,20 +15,22 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color:rgb(255, 131, 0);
+    background: rgb(201, 50, 39);
+    background: linear-gradient(180deg, rgb(201, 50, 39) 18%, rgb(255, 0, 0)100%);;
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track{
-    background-color: rgb(0, 163, 180);
+    background: rgb(32, 32, 32);
+    background:linear-gradient(180deg, rgb(32, 32, 32) 18%, rgb(44, 44, 44)100%);
 }
 
 .header-layout{
     grid-area: HL;
     background-color: rgb(255, 255, 255);
     height: 200px;
-    background: rgb(0, 163, 180);
-    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+    background: rgb(32, 32, 32);
+    background: linear-gradient(180deg, rgb(32, 32, 32) 18%, rgb(44, 44, 44)100%);
 }
 
 .header-layout .content {
@@ -36,7 +38,7 @@ body::-webkit-scrollbar-track{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .header-layout .content .logo-nav{
@@ -46,6 +48,7 @@ body::-webkit-scrollbar-track{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 10px;
 }
 .header-layout .content .logo-nav img{
       width: 20%;
@@ -56,7 +59,7 @@ body::-webkit-scrollbar-track{
 }
 
 .header-layout .content .logo-nav ul{
-    padding:0px;
+    padding:0px 180px;
     margin:0px;
     list-style:none;
     display: flex;
@@ -218,7 +221,7 @@ body::-webkit-scrollbar-track{
 
 
 .header-layout .content .logo-nav li a:hover{
-    border-bottom: 2px solid rgb(0, 51, 131);
+    border-bottom: 2px solid rgb(235, 235, 235);
 }
 
 
@@ -228,12 +231,13 @@ body::-webkit-scrollbar-track{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .header-layout .content .search input{
     width: 600px;
     height: 40px;
-    border: none;
+    border: solid 2px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 20px;
@@ -241,7 +245,7 @@ body::-webkit-scrollbar-track{
 
 .header-layout .content .search input:focus{
     box-shadow: 0 0 0 0;
-    border: 0 none;
+    border: solid 2px;
     outline: 0;
 }
 
@@ -253,13 +257,14 @@ body::-webkit-scrollbar-track{
 .header-layout .content .search a{
     width: 40px;
     height: 40px;
-    background-color:rgb(255, 131, 0);
+    background-color:rgb(201, 50, 39);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border: rgb(201, 50, 39) solid 3px;
 }
 
 .header-layout .content .search a:hover{
-    background-color:rgb(255, 177, 94);
+    background-color:rgb(255, 0, 0);
 }
 
 .header-layout .content .search a::before{
@@ -284,8 +289,8 @@ body::-webkit-scrollbar-track{
 .footer-layout{
     grid-area: FL;
     height: 500px;
-    background: rgb(0, 163, 180);
-    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+    background: rgb(32, 32, 32);
+    background: linear-gradient(180deg, rgb(32, 32, 32) 18%, rgb(44, 44, 44)100%);
     padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;
