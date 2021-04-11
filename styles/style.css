@@ -53,6 +53,9 @@ body::-webkit-scrollbar-track{
 }
 .header-layout .content .logo-nav nav{
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header-layout .content .logo-nav ul{
@@ -279,6 +282,17 @@ body::-webkit-scrollbar-track{
 
 .content-layout{
     grid-area: CL;   
+}
+
+.content-layout section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.content-layout section .title{
+    width: 90%;
 }
 
 .footer-layout{
