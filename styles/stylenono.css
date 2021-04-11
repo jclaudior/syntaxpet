@@ -8,6 +8,7 @@ body{
     height: 100hv;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+	transition: background .4s ease-in;
 }
 
 body::-webkit-scrollbar{
@@ -257,14 +258,14 @@ body::-webkit-scrollbar-track{
 .header-layout .content .search a{
     width: 40px;
     height: 40px;
-    background-color:rgb(201, 50, 39);
+    background-color:#ce432d;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: rgb(201, 50, 39) solid 3px;
+    border: #c93227 solid 3px;
 }
 
 .header-layout .content .search a:hover{
-    background-color:rgb(255, 0, 0);
+    background-color:#c93227;
 }
 
 .header-layout .content .search a::before{
@@ -280,7 +281,6 @@ body::-webkit-scrollbar-track{
     left: 7px;
     top: 7px;
 }
-
 
 .content-layout{
     grid-area: CL;   
@@ -470,4 +470,130 @@ body::-webkit-scrollbar-track{
     }
 
     
+}
+
+/* Banner Home */
+
+.banner{
+	align-items: center;
+}
+
+.banner-area{
+	width: 100%;
+	height: 310px;
+	background-color: #fff;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner-area img{
+	width: 900px;
+	height: 300px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.card{
+	position: absolute;
+	width: 900px;
+	height: 300px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	cursor: pointer;
+	transition: transform .4s ease;
+}
+
+.cards{
+	width: 900px;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+#img1:checked ~ .cards #banner3, #img2:checked ~ .cards #banner1, #img3:checked ~ .cards #banner2{
+	transform: translatex(-40%) scale(.8);
+	opacity: .4;
+	z-index: 0;
+}
+
+#img1:checked ~ .cards #banner2, #img2:checked ~ .cards #banner3, #img3:checked ~ .cards #banner1{
+	transform: translatex(40%) scale(.8);
+	opacity: .4;
+	z-index: 0;
+}
+
+#img1:checked ~ .cards #banner1, #img2:checked ~ .cards #banner2, #img3:checked ~ .cards #banner3{
+	transform: translatex(0) scale(1);
+	opacity: 1;
+	z-index: 1;
+}
+
+input[type=radio]{
+	display: none;
+}
+
+/* Lista de produtos Home */
+
+.list-prod-area{
+    width: 98vw;
+	height: 310px;
+    margin: 10px;
+	background-color: #fff;
+    border: solid 2px;
+}
+
+.cardprod{
+	position: relative;
+	left: 0;
+	right: 0;
+}
+
+.cardsprod{
+    display: flex;
+    overflow-x: auto;
+}
+
+.cardsprod img{
+	width: 310px;
+	height: 310px;
+    flex: none;
+}
+
+.cardsprod::-webkit-scrollbar{
+    width:10px;
+    height: 10px;
+}
+
+.cardsprod::-webkit-scrollbar-thumb{
+    background: #ed4d35;
+    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);;
+    border-radius: 10px;
+}
+
+.cardsprod::-webkit-scrollbar-track{
+    background: #fff;
+    background:linear-gradient(180deg, #fff 18%, #fff);
+}
+
+/* Lista de serviços Home */
+
+.list-serv-area{
+    width: 98vw;
+	height: 310px;
+    padding: 10px;
+	background-color: #fff;
+    border: solid 2px;
+}
+
+.cardserv{
+	position: relative;
+    display: flex;
+    justify-content: space-around;
+	left: 0;
+	right: 0;
+}
+
+.cardsserv img{
+	width: 510px;
+	height: 310px;
 }
