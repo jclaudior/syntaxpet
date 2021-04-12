@@ -15,6 +15,11 @@ section .content{
     white-space: nowrap;
     position: relative;
     float: left; 
+    cursor: grab;
+}
+
+.carousel-product:active{
+    cursor: grabbing;
 }
 
 .carousel-product .card{
@@ -98,6 +103,7 @@ section .content{
     overflow-y: scroll;
     overflow: hidden;
     height: 100px;    
+    cursor: ns-resize;
 }
 
 .btn-comprar{
