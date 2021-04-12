@@ -554,8 +554,9 @@ input[type=radio]{
 }
 
 .cardsprod img{
-	width: 310px;
-	height: 310px;
+	width: 280px;
+	height: 280px;
+    padding: 10px;
     flex: none;
 }
 
