@@ -539,7 +539,6 @@ input[type=radio]{
 	height: 310px;
     margin: 10px;
 	background-color: #fff;
-    border: solid 2px;
 }
 
 .cardprod{
@@ -583,7 +582,6 @@ input[type=radio]{
 	height: 310px;
     padding: 10px;
 	background-color: #fff;
-    border: solid 2px;
 }
 
 .cardserv{
