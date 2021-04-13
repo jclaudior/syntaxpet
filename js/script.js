@@ -4,27 +4,55 @@ let startXAlimentacao;
 let scrollLeftAlimentacao;
 
 sliderAlimentacao.addEventListener('mousedown', (e) => {
-  isDownAlimentaca = true;
+  isDownAlimentacao = true;
   sliderAlimentacao.classList.add('active');
   startXAlimentacao = e.pageX - sliderAlimentacao.offsetLeft;
   scrollLeftAlimentacao = sliderAlimentacao.scrollLeft;
 });
 sliderAlimentacao.addEventListener('mouseleave', () => {
-  isDownAlimentaca = false;
+  isDownAlimentacao = false;
   sliderAlimentacao.classList.remove('active');
 });
 sliderAlimentacao.addEventListener('mouseup', () => {
-  isDownAlimentaca = false;
+  isDownAlimentacao = false;
   sliderAlimentacao.classList.remove('active');
 });
 sliderAlimentacao.addEventListener('mousemove', (e) => {
-  if(!isDownAlimentaca) return;
+  if(!isDownAlimentacao) return;
   e.preventDefault();
   const x = e.pageX - sliderAlimentacao.offsetLeft;
   const walk = (x - startXAlimentacao) * 3; //scroll-fast
   sliderAlimentacao.scrollLeft = scrollLeftAlimentacao - walk;
 });
 
+
+const rightAlimentacao = document.getElementById("rightAlimentacao");
+const leftAlimentacao = document.getElementById("leftAlimentacao");
+var moving= -1;
+
+rightAlimentacao.addEventListener('mousedown', () => {
+  if(moving==-1)  //Prevent multimple loops!
+    moving = setInterval(()=>sliderAlimentacao.scrollLeft -= 5, 10 /*execute every 100ms*/);
+});
+
+rightAlimentacao.addEventListener('mouseup', () => {
+  if(moving!=-1) {  //Only stop if exists
+    clearInterval(moving);
+    moving=-1;
+  }
+});
+
+leftAlimentacao.addEventListener('mousedown', () => {
+  if(moving==-1)  //Prevent multimple loops!
+    moving = setInterval(()=>sliderAlimentacao.scrollLeft += 5, 10 /*execute every 100ms*/);
+});
+
+leftAlimentacao.addEventListener('mouseup', () => {
+  if(moving!=-1) {  //Only stop if exists
+    clearInterval(moving);
+    moving=-1;
+  }
+});
 
 const sliderAlimentacaoDesc = document.getElementById('alimentacaoDesc');
 let isDownAlimentacaoDesc = false;
