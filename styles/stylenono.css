@@ -60,7 +60,7 @@ body::-webkit-scrollbar-track{
 }
 
 .header-layout .content .logo-nav ul{
-    padding:0px 180px;
+    padding:0px 100px;
     margin:0px;
     list-style:none;
     display: flex;
@@ -82,13 +82,16 @@ body::-webkit-scrollbar-track{
     animation-delay: all 3s;
 }
 
-.carrinho{
+/* Icones */
+
+.faleconosco{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.carrinho::before{
+.faleconosco::before{
     content: "";
-    background: url("../images/carrinho.png");
+    background: url("../images/faleconoscow.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -99,14 +102,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
-.cadastro{
+.nossaslojas{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.cadastro::before{
+.nossaslojas::before{
     content: "";
-    background: url("../images/user.png");
+    background: url("../images/nossaslojasw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -117,13 +120,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.assinatura{
+.campanhassociais{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.assinatura::before{
+.campanhassociais::before{
     content: "";
-    background: url("../images/assinatura.png");
+    background: url("../images/campanhassociaisw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -136,6 +140,7 @@ body::-webkit-scrollbar-track{
 
 .adocao{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .adocao::before{
@@ -151,13 +156,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.contato{
+.veterinaria{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.contato::before{
+.veterinaria::before{
     content: "";
-    background: url("../images/telefone.png");
+    background: url("../images/veterinariaw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -170,6 +176,7 @@ body::-webkit-scrollbar-track{
 
 .servico{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .servico::before{
@@ -185,9 +192,9 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
 .produto{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .produto::before{
@@ -205,6 +212,7 @@ body::-webkit-scrollbar-track{
 
 .home{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .home::before{
@@ -220,6 +228,7 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
+/* Fim icones */
 
 .header-layout .content .logo-nav li a:hover{
     border-bottom: 2px solid rgb(235, 235, 235);
@@ -595,4 +604,22 @@ input[type=radio]{
 .cardsserv img{
 	width: 510px;
 	height: 310px;
+}
+
+/* Titulos */
+
+.txttitulos{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.fundotitulo{
+    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);
+    border-radius: 50px;
+    margin-left: 550px;
+    margin-right: 550px;
 }
