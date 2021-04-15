@@ -32,7 +32,7 @@ var moving= -1;
 
 rightAlimentacao.addEventListener('mousedown', () => {
   if(moving==-1)  //Prevent multimple loops!
-    moving = setInterval(()=>sliderAlimentacao.scrollLeft -= 5, 10 /*execute every 100ms*/);
+    moving = setInterval(()=>sliderAlimentacao.scrollLeft += 5, 10 /*execute every 100ms*/);
 });
 
 rightAlimentacao.addEventListener('mouseup', () => {
@@ -44,7 +44,7 @@ rightAlimentacao.addEventListener('mouseup', () => {
 
 leftAlimentacao.addEventListener('mousedown', () => {
   if(moving==-1)  //Prevent multimple loops!
-    moving = setInterval(()=>sliderAlimentacao.scrollLeft += 5, 10 /*execute every 100ms*/);
+    moving = setInterval(()=>sliderAlimentacao.scrollLeft -= 5, 10 /*execute every 100ms*/);
 });
 
 leftAlimentacao.addEventListener('mouseup', () => {
@@ -108,6 +108,34 @@ sliderBrinquedos.addEventListener('mousemove', (e) => {
   sliderBrinquedos.scrollLeft = scrollLeftBrinquedos - walk;
 });
 
+const rightBrinquedos= document.getElementById("rightBrinquedos");
+const leftBrinquedos = document.getElementById("leftBrinquedos");
+var moving= -1;
+
+rightBrinquedos.addEventListener('mousedown', () => {
+  if(moving==-1)  //Prevent multimple loops!
+    moving = setInterval(()=>sliderBrinquedos.scrollLeft += 5, 10 /*execute every 100ms*/);
+});
+
+rightBrinquedos.addEventListener('mouseup', () => {
+  if(moving!=-1) {  //Only stop if exists
+    clearInterval(moving);
+    moving=-1;
+  }
+});
+
+leftBrinquedos.addEventListener('mousedown', () => {
+  if(moving==-1)  //Prevent multimple loops!
+    moving = setInterval(()=>sliderBrinquedos.scrollLeft -= 5, 10 /*execute every 100ms*/);
+});
+
+leftBrinquedos.addEventListener('mouseup', () => {
+  if(moving!=-1) {  //Only stop if exists
+    clearInterval(moving);
+    moving=-1;
+  }
+});
+
 
 const sliderBrinquedosDesc = document.getElementById('brinquedosDesc');
 let isDownBrinquedosDesc = false;
@@ -162,6 +190,34 @@ sliderAcessorios.addEventListener('mousemove', (e) => {
   const x = e.pageX - sliderAcessorios.offsetLeft;
   const walk = (x - startXAcessorios) * 3; //scroll-fast
   sliderAcessorios.scrollLeft = scrollLeftAcessorios - walk;
+});
+
+const rightAcessorios= document.getElementById("rightAcessorios");
+const leftAcessorios = document.getElementById("leftAcessorios");
+var moving= -1;
+
+rightAcessorios.addEventListener('mousedown', () => {
+  if(moving==-1)  //Prevent multimple loops!
+    moving = setInterval(()=>sliderAcessorios.scrollLeft += 5, 10 /*execute every 100ms*/);
+});
+
+rightAcessorios.addEventListener('mouseup', () => {
+  if(moving!=-1) {  //Only stop if exists
+    clearInterval(moving);
+    moving=-1;
+  }
+});
+
+leftAcessorios.addEventListener('mousedown', () => {
+  if(moving==-1)  //Prevent multimple loops!
+    moving = setInterval(()=>sliderAcessorios.scrollLeft -= 5, 10 /*execute every 100ms*/);
+});
+
+leftAcessorios.addEventListener('mouseup', () => {
+  if(moving!=-1) {  //Only stop if exists
+    clearInterval(moving);
+    moving=-1;
+  }
 });
 
 

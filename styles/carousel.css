@@ -3,10 +3,10 @@
 .content-carousel{
     display: flex;
     align-items: center;
+    margin: 40px 0px;
 }
 
-.controller-left{
-    border: 3px solid rgb(255, 131, 0);
+.controller-left-laranja{
     height: 455px;
     display: flex;
     justify-content: center;
@@ -14,8 +14,34 @@
     align-items: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border: 3px solid rgb(255, 131, 0);
     background-color: rgb(255, 131, 0);
 }
+
+.controller-left-laranja:hover{
+    cursor: pointer;
+    background: rgb(255,170,0);
+    background: linear-gradient(270deg, rgba(255,131,0,1) 1%, rgba(255,170,0,1) 100%);
+}
+
+.controller-left-azul{
+    height: 455px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 3px solid rgb(0, 163, 180);
+    background-color: rgb(0, 163, 180);
+}
+
+.controller-left-azul:hover{
+    cursor: pointer;
+    background: rgb(0, 163, 180);
+    background: linear-gradient(270deg, rgb(0, 163, 180) 1%, rgb(0, 200, 180) 100%);
+}
+
 
 .left-arrow-white {
     content: "";
@@ -28,17 +54,10 @@
     display: block;
 }
 
-.controller-left:hover{
-    cursor: pointer;
-    background: rgb(255,170,0);
-    background: linear-gradient(270deg, rgba(255,131,0,1) 1%, rgba(255,170,0,1) 100%);
-}
 
 
 
-.controller-right{
-    border: 3px solid rgb(255, 131, 0);
-    background-color: rgb(255, 131, 0);
+.controller-right-laranja{
     height: 455px;
     display: flex;
     justify-content: center;
@@ -46,6 +65,32 @@
     align-items: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: 3px solid rgb(255, 131, 0);
+    background-color: rgb(255, 131, 0);
+}
+
+.controller-right-laranja:hover{
+    cursor: pointer;
+    background: rgb(255,170,0);
+    background: linear-gradient(270deg, rgba(255,170,0,1) 1%,  rgba(255,131,0,1) 100%);
+}
+
+.controller-right-azul{
+    height: 455px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px solid rgb(0, 163, 180);
+    background-color: rgb(0, 163, 180);
+}
+
+.controller-right-azul:hover{
+    cursor: pointer;
+    background: rgb(0, 163, 180);
+    background: linear-gradient(270deg, rgb(0, 200, 180) 1%,  rgb(0, 163, 180) 100%);
 }
 
 .right-arrow-white {
@@ -59,11 +104,7 @@
     display: block;
 }
 
-.controller-right:hover{
-    cursor: pointer;
-    background: rgb(255,170,0);
-    background: linear-gradient(270deg, rgba(255,170,0,1) 1%,  rgba(255,131,0,1) 100%);
-}
+
 
 
 .carousel{
