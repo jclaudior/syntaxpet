@@ -223,3 +223,9 @@
     background-color: rgba(1, 111, 161,1);
     color: white;
 }
+
+@media  (max-width: 1230px){
+    .product-description{
+        visibility: hidden;
+    }
+}
