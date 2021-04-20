@@ -16,22 +16,20 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-    background: #ed4d35;
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);;
+    background-color:rgb(255, 131, 0);
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track{
-    background: #fff;
-    background:linear-gradient(180deg, #fff 18%, #fff);
+    background-color: rgb(0, 163, 180);
 }
 
 .header-layout{
     grid-area: HL;
-    background-color: #ed4d35;
+    background-color: rgb(255, 255, 255);
     height: 200px;
-    background: rgb(32, 32, 32);
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);
+    background: rgb(0, 163, 180);
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);    
 }
 
 .header-layout .content {
@@ -231,7 +229,7 @@ body::-webkit-scrollbar-track{
 /* Fim icones */
 
 .header-layout .content .logo-nav li a:hover{
-    border-bottom: 2px solid rgb(235, 235, 235);
+    border-bottom: 2px solid rgb(0, 51, 131);
 }
 
 
@@ -241,13 +239,12 @@ body::-webkit-scrollbar-track{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
 }
 
 .header-layout .content .search input{
     width: 600px;
     height: 40px;
-    border: solid 2px;
+    border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 20px;
@@ -267,14 +264,13 @@ body::-webkit-scrollbar-track{
 .header-layout .content .search a{
     width: 40px;
     height: 40px;
-    background-color:#ce432d;
+    background-color:rgb(255, 131, 0);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: #c93227 solid 3px;
 }
 
 .header-layout .content .search a:hover{
-    background-color:#c93227;
+    background-color:rgb(255, 177, 94);
 }
 
 .header-layout .content .search a::before{
@@ -298,8 +294,8 @@ body::-webkit-scrollbar-track{
 .footer-layout{
     grid-area: FL;
     height: 500px;
-    background: #ed4d35;
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);
+    background: rgb(0, 163, 180);
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
     padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -490,6 +486,7 @@ body::-webkit-scrollbar-track{
 .banner-area{
 	width: 100%;
 	height: 310px;
+    padding-top: 30px;
 	background-color: #fff;
 	background-size: cover;
 	background-position: center center;
@@ -543,45 +540,101 @@ input[type=radio]{
 
 /* Lista de produtos Home */
 
-.list-prod-area{
-    width: 98vw;
-	height: 310px;
-    margin: 10px;
-	background-color: #fff;
-}
-
-.cardprod{
-	position: relative;
-	left: 0;
-	right: 0;
-}
-
-.cardsprod{
+.listaprod {
+    position: relative;
+    height: 300px;
+    width: 1000px;
+    top: 10px;
+    left: calc(50% - 500px);
     display: flex;
-    overflow-x: auto;
 }
 
-.cardsprod img{
-	width: 280px;
-	height: 280px;
-    padding: 10px;
-    flex: none;
+.cardprod {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: rgb(0, 163, 180);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem rgb(70, 70, 70);
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+  
+.cardprod:not(:first-child) {
+    margin-left: -50px;
+}
+  
+.cardprod:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+  
+.cardprod:hover ~ .cardprod {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+  
+.titleprod {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    position: absolute;
+    left: 20px;
+    top: 0;
 }
 
-.cardsprod::-webkit-scrollbar{
-    width:10px;
+/* Animacao */
+
+.cardprod::before, .cardprod::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardprod::before{
+    transform: scaleX(0);
     height: 10px;
+    width: 170px;
+    background-color: rgb(255, 131, 0);
+    border-radius: 0px 0px 10px 10px;
+    top: 270px;
 }
 
-.cardsprod::-webkit-scrollbar-thumb{
-    background: #ed4d35;
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);;
+.cardprod::after{
+    transform: scaleX(0);
+    height: 10px;
+    width: 170px;
+    background-color: rgb(255, 131, 0);
+    border-radius: 0px 0px 10px 10px;
+    top: 270px;
+}
+
+.cardprod:hover::before{
+    transform: scaleX(1);
+}
+
+.cardprod:hover::after{
+    transform: scaleX(1);
+}
+
+.contprod{
+    height: 250px;
+    width: 170px;
+    padding-top: 60px;
     border-radius: 10px;
 }
 
-.cardsprod::-webkit-scrollbar-track{
-    background: #fff;
-    background:linear-gradient(180deg, #fff 18%, #fff);
+.contprod .img{
+    position: relative;
+    height: 200px;
+    width: 170px;
+    opacity: 80%;
+    border-radius: 10px;
 }
 
 /* Lista de serviços Home */
@@ -591,22 +644,62 @@ input[type=radio]{
 	height: 310px;
     padding: 10px;
 	background-color: #fff;
+    position: relative;
 }
 
 .cardserv{
 	position: relative;
     display: flex;
     justify-content: space-around;
-	left: 0;
-	right: 0;
+}
+
+.cardsserv{
+	width: 510px;
+	height: 310px;
+    background: rgb(0, 163, 180);
+    border-radius: 10px;
 }
 
 .cardsserv img{
-	width: 510px;
-	height: 310px;
+	position: relative;
+    left: 33%;
 }
 
-/* Titulos */
+.cardsserv::after{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardsserv::after{
+    transform: scaleX(0);
+    height: 10px;
+    width: 510px;
+    background-color: rgb(255, 131, 0);
+    border-radius: 0px 0px 10px 10px;
+    top: 37px;
+}
+
+.cardsserv:hover::after{
+    transform: scaleX(1);
+}
+
+.titleserv{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+}
+
+/* Titulos Home */
 
 .txttitulos{
     font-size: 20px;
@@ -618,7 +711,7 @@ input[type=radio]{
 }
 
 .fundotitulo{
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
     border-radius: 50px;
     margin-left: 550px;
     margin-right: 550px;
