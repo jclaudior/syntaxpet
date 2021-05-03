@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 body::-webkit-scrollbar-track{
-    background-color: rgb(0, 163, 180);
+    background-color: #00a3b4;
 }
 
 .header-layout{
@@ -78,7 +78,7 @@ body::-webkit-scrollbar-track{
     text-decoration: none;
     padding: 10px 5px;
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-weight: bolder;
     animation-delay: all 3s;
 }
@@ -223,7 +223,7 @@ body::-webkit-scrollbar-track{
 
 
 .header-layout .content .logo-nav li a:hover{
-    border-bottom: 2px solid rgb(0, 51, 131);
+    border-bottom: 2px solid #003383;
 }
 
 
@@ -258,13 +258,13 @@ body::-webkit-scrollbar-track{
 .header-layout .content .search a{
     width: 40px;
     height: 40px;
-    background-color:rgb(255, 131, 0);
+    background-color:#ff8300;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .header-layout .content .search a:hover{
-    background-color:rgb(255, 177, 94);
+    background-color:#ffb15e;
 }
 
 .header-layout .content .search a::before{
@@ -286,19 +286,7 @@ body::-webkit-scrollbar-track{
     grid-area: CL;   
 }
 
-.content-layout section{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
-.content-layout section .title{
-    width: 95%;
-    font-size:23px;
-    color: #002f86;
-    font-family: 'Bree Serif', serif;
-    display: flex;
-}
 
 .footer-layout{
     grid-area: FL;

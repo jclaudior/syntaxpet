@@ -1,0 +1,13 @@
+.content-layout section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-layout section .title{
+    width: 95%;
+    font-size:23px;
+    color: #002f86;
+    font-family: 'Bree Serif', serif;
+    display: flex;
+}

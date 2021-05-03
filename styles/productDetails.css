@@ -1,0 +1,26 @@
+.content-layout .container {
+    margin: 0px 70px;
+    padding: 20px 0px;
+}
+
+.container .headerDetails{
+    display: flex;
+}
+
+.container .imgProductView{
+    border: solid 1px rgb(0, 163, 180);
+    border-top:  solid 4px rgb(0, 163, 180);
+    border-bottom:  solid 4px rgb(0, 163, 180);
+
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+.container .imgProductView img{
+    width: 600px;
+    height: 400px;
+}
+
+.container .detailsView{
+    
+}
