@@ -1,0 +1,77 @@
+.conteiner {
+    margin-right: 20px;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    height: 70vh;
+}
+
+.navegacao {
+    position: fixed;
+    left: 30px;
+    top: 40vh;
+
+    border: 1px silver solid;
+    border-radius: 20px;
+    width: 250px;
+    background-color: white;
+    
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: black;
+}
+
+.navegacao li {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navegacao li:hover {
+    background-image: linear-gradient(to right, rgb(129, 217, 252) , rgb(0, 132, 255));
+}
+
+.navegacao ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 100%;
+    grid-column-end: 3;
+    grid-row-end: 3;
+    grid-row-start: 1;
+
+    margin: 0 auto;
+}
+.logo img, .full {
+    height: 100%;
+}
+.titulo{
+    color: rgb(0, 0, 73)
+}
+.descricao {
+}
+.horizontal-card {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50% 50%;
+
+    border: 1px blue solid;
+    height: 33%;
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.box-shadow {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
