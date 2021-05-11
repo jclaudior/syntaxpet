@@ -120,6 +120,7 @@ section {
 h1 {
     padding: 20px;
     margin: 0;
+    font-size: 30px;
 }
 
 .conteiner-flex {
@@ -143,6 +144,7 @@ h2 {
     height: 30%;
     padding: 20px;
     color:rgb(0, 0, 73);
+    font-size: 20px;
 }
 
 p {
