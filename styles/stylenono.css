@@ -29,7 +29,7 @@ body::-webkit-scrollbar-track{
     background-color: rgb(255, 255, 255);
     height: 200px;
     background: rgb(0, 163, 180);
-    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);    
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
 }
 
 .header-layout .content {
@@ -479,62 +479,6 @@ body::-webkit-scrollbar-track{
 
 /* Banner Home */
 
-/* Comment
-.banner{
-	align-items: center;
-}
-
-.banner-area{
-	width: 100%;
-	height: 310px;
-    padding-top: 30px;
-	background-color: #fff;
-	background-size: cover;
-	background-position: center center;
-}
-
-.banner-area img{
-	width: 900px;
-	height: 300px;
-	border-radius: 20px;
-	object-fit: cover;
-}
-
-.card{
-	position: absolute;
-	width: 900px;
-	height: 300px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	cursor: pointer;
-	transition: transform .4s ease;
-}
-
-.cards{
-	width: 900px;
-	height: 300px;
-	margin-bottom: 10px;
-}
-
-#img1:checked ~ .cards #banner3, #img2:checked ~ .cards #banner1, #img3:checked ~ .cards #banner2{
-	transform: translatex(-40%) scale(.8);
-	opacity: .4;
-	z-index: 0;
-}
-
-#img1:checked ~ .cards #banner2, #img2:checked ~ .cards #banner3, #img3:checked ~ .cards #banner1{
-	transform: translatex(40%) scale(.8);
-	opacity: .4;
-	z-index: 0;
-}
-
-#img1:checked ~ .cards #banner1, #img2:checked ~ .cards #banner2, #img3:checked ~ .cards #banner3{
-	transform: translatex(0) scale(1);
-	opacity: 1;
-	z-index: 1;
-}*/
-
 .areabanner{
     padding-top: 20px;
     height: 300px;
@@ -579,7 +523,7 @@ body::-webkit-scrollbar-track{
 }
 
 .manual-btn{
-    border: 2px solid #ff0000;
+    border: 2px solid rgb(255, 131, 0);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -591,7 +535,7 @@ body::-webkit-scrollbar-track{
 }
 
 .manual-btn:hover{
-    background: #ff0000;
+    background: rgb(255, 131, 0);
 }
 
 #radio1:checked ~ .first{
@@ -615,7 +559,7 @@ body::-webkit-scrollbar-track{
 }
 
 .navigation-auto div{
-    border: 2px solid #ff0000;
+    border: 2px solid rgb(255, 131, 0);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -626,15 +570,15 @@ body::-webkit-scrollbar-track{
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #ff0000;
+    background: rgb(255, 131, 0);
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #ff0000;
+    background: rgb(255, 131, 0);
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #ff0000;
+    background: rgb(255, 131, 0);
 }
 
 input[type=radio]{
@@ -743,7 +687,7 @@ input[type=radio]{
 /* Lista de serviços Home */
 
 .list-serv-area{
-    width: 98vw;
+    width: 100%;
 	height: 310px;
     padding: 10px;
 	background-color: #fff;
@@ -765,7 +709,9 @@ input[type=radio]{
 
 .cardsserv img{
 	position: relative;
-    left: 33%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 .cardsserv::after{
@@ -786,7 +732,7 @@ input[type=radio]{
     width: 510px;
     background-color: rgb(255, 131, 0);
     border-radius: 0px 0px 10px 10px;
-    top: 37px;
+    top: -10px;
 }
 
 .cardsserv:hover::after{
