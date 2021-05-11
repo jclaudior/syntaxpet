@@ -49,21 +49,36 @@
     </header>
     <main class="content-layout">
 
-        <div class="banner-area">
-            <div class="container" id="banner">
-                <input type="radio" name="slide" id="img1" checked>
-                <input type="radio" name="slide" id="img2">
-                <input type="radio" name="slide" id="img3">
-                <div class="cards">
-                    <label class="card" for="img1" id="banner1">
-                        <img src="https://cdn.pixabay.com/photo/2015/10/12/15/01/cat-984097_960_720.jpg">
-                    </label>
-                    <label class="card" for="img2" id="banner2">
-                        <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_960_720.jpg">
-                    </label>
-                    <label class="card" for="img3" id="banner3">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/28/12/37/cat-3113513_960_720.jpg">
-                    </label>
+        <div class="areabanner">
+            <div class="slider">
+                <div class="slides">
+                    
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    
+                    <div class="slide first">
+                        <img src="images/P1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/P1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <a href="#"><img src="images/P1.png" alt=""></a>
+                    </div>
+        
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+        
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+        
                 </div>
             </div>
         </div>
@@ -175,5 +190,6 @@
             </ul>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
