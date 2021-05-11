@@ -1,6 +1,6 @@
 .conteiner {
-    margin-right: 20px;
-    margin-left: 300px;
+    margin-right: 70px;
+    margin-left: 340px;
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -9,7 +9,7 @@
 
 .navegacao {
     position: fixed;
-    left: 30px;
+    left: 20px;
     top: 40vh;
 
     border: 1px silver solid;
@@ -21,7 +21,9 @@
 
 .navegacao a {
     text-decoration: none;
-    color: black;
+    color:rgb(0, 0, 73);
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .navegacao li {
@@ -51,21 +53,44 @@
     height: 100%;
 }
 .titulo{
-    color: rgb(0, 0, 73)
+    color: rgb(0, 0, 73);
 }
-.descricao {
-}
+
 .horizontal-card {
     display: grid;
 
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 50% 50%;
 
-    border: 1px blue solid;
+    border-radius: 10px;
     height: 33%;
     width: 100%;
 
     margin-bottom: 10px;
+
+    
+    -moz-transition:  0.3s;
+	-webkit-transition:  0.3s;
+	transition:  0.3s;
+
+    border-bottom: rgb(255, 131, 0) solid 10px;
+    margin-bottom: 10px;
+
+}
+
+.horizontal-card:hover {
+    -moz-transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	transform: scale(1.1);
+    z-index: 1;
+    background-color: rgb(228, 227, 227);
+}
+
+.horizontal-card a:hover{
+    color:rgb(0, 132, 255);
+    transition: 0.7s;
+    -moz-transition: 0.7s;
+    -webkit-transition: 0.7s;
 }
 
 .text-center{
@@ -73,5 +98,70 @@
 }
 
 .box-shadow {
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin-right: 70px;
+    margin-left: 340px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img-desc {
+    height: 300px;
+    margin-left: 30px;
+}
+
+.bg-lightblue {
+    background-color: rgb(6, 177, 196)
+}
+
+h1 {
+    padding: 20px;
+    margin: 0;
+}
+
+.conteiner-flex {
+    display: flex;
+
+}
+
+
+.conteiner-flex div {
+    width: 25%;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    margin: 0;
+    height: 30%;
+    padding: 20px;
+    color:rgb(0, 0, 73);
+}
+
+p {
+    margin: 0;
+    height: 90%;
+    padding: 10px;
+}
+
+article {
+    margin: 100px 0;
+}
+
+.titulo a {
+    text-decoration: none;
+    color:rgb(0, 0, 73);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.bg-orange {
+    border-bottom: rgb(255, 131, 0) solid 10px;
 }
