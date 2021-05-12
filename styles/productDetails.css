@@ -7,6 +7,10 @@
     display: flex;
 }
 
+.headerDetails{
+    margin-bottom: 50px;
+}
+
 .container .imgProductView{
     border: solid 1px rgb(0, 163, 180);
     border-top:  solid 4px rgb(0, 163, 180);
