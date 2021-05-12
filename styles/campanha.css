@@ -1,0 +1,112 @@
+body {
+   width: 95%
+   max-width: 800px;
+   margin: auto;
+}
+
+main {
+    background: #ff830073;
+    padding: 0px 0px;
+    margin: 30px;
+    border-radius: 50px;
+}
+
+#area-campanhas{
+height: 300px;
+width: 1420px;
+margin: 10px auto 10px auto;
+border: 0px solid red;
+}
+
+#postagem{
+    background: #fff;
+    padding 10px:
+}
+
+.img-postagem{
+float: left;
+padding: 10px;
+margin: 0 10px 5px 0;
+}
+
+.img-postagem2{
+float: right;
+padding: 10px;
+margin: 0 10px 5px 0;
+}
+/* FLIP DA IMAGEM */ 
+/* O container geral define a perspectiva */  
+.flip-container { perspective: 1000; }    
+
+/* vira os containers frente e verso quando o mouse passa em cima */
+.flip-container:hover .flipper, .flip-container.hover .flipper {      
+  transform: rotateY(180deg);   
+}    
+.flip-container, .front, .back {    
+  width: 320px;   
+  height: 480px;  
+}
+
+/* define a velocidade da transição */
+.flipper {    
+  transition: 0.6s;   
+  transform-style: preserve-3d;     
+  position: relative;  
+}
+    
+/* esconde o verso durante a animação */
+.front, .back {   
+  backface-visibility: hidden;      
+  position: absolute;   
+  top: 0;   
+ left: 0;  
+}
+    
+/* frente posicionada sobre o verso */
+.front { z-index: 2;  }    
+
+/* verso inicialmente escondido */
+.back { transform: rotateY(180deg); }
+
+
+/* ANIMAÇÃO DO BOTÃO */
+
+.btn-campanhas {
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+   border-radius: 100px;
+   color: #000000;
+   font-family: Arial;
+   font-size: 16px;
+   font-weight: 100;
+   padding: 8px;
+   background-color: #01a0b1c2;
+   border: solid #000000 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn-campanhas:hover {
+   background: rgba(187, 187, 187, 0.6);
+   border: outset #000000 1px;
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+   border-radius: 100px;
+   text-decoration: none;
+}
+
+.local{
+   margin: 30px 0;
+   text-align: center;
+   width: 100%
+}
+
+.local table{
+   background: #01a1b2d1;
+   border-radius: 10px;
+   padding: 10px;
+   margin: auto;
+
+}
