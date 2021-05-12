@@ -15,22 +15,20 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-    background: #ed4d35;
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);;
+    background-color:rgb(255, 131, 0);
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track{
-    background: #fff;
-    background:linear-gradient(180deg, #fff 18%, #fff);
+    background-color: rgb(0, 163, 180);
 }
 
 .header-layout{
     grid-area: HL;
-    background-color: #ed4d35;
+    background-color: rgb(255, 255, 255);
     height: 200px;
-    background: rgb(32, 32, 32);
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);
+    background: rgb(0, 163, 180);
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
 }
 
 .header-layout .content {
@@ -38,7 +36,7 @@ body::-webkit-scrollbar-track{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .header-layout .content .logo-nav{
@@ -48,7 +46,6 @@ body::-webkit-scrollbar-track{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 10px;
 }
 .header-layout .content .logo-nav img{
       width: 20%;
@@ -59,7 +56,7 @@ body::-webkit-scrollbar-track{
 }
 
 .header-layout .content .logo-nav ul{
-    padding:0px 180px;
+    padding:0px;
     margin:0px;
     list-style:none;
     display: flex;
@@ -81,13 +78,16 @@ body::-webkit-scrollbar-track{
     animation-delay: all 3s;
 }
 
-.carrinho{
+/* Icones */
+
+.faleconosco{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.carrinho::before{
+.faleconosco::before{
     content: "";
-    background: url("../images/carrinho.png");
+    background: url("../images/faleconoscow.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -98,14 +98,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
-.cadastro{
+.nossaslojas{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.cadastro::before{
+.nossaslojas::before{
     content: "";
-    background: url("../images/user.png");
+    background: url("../images/nossaslojasw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -116,13 +116,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.assinatura{
+.campanhassociais{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.assinatura::before{
+.campanhassociais::before{
     content: "";
-    background: url("../images/assinatura.png");
+    background: url("../images/campanhassociaisw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -135,6 +136,7 @@ body::-webkit-scrollbar-track{
 
 .adocao{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .adocao::before{
@@ -150,13 +152,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.contato{
+.veterinaria{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.contato::before{
+.veterinaria::before{
     content: "";
-    background: url("../images/telefone.png");
+    background: url("../images/veterinariaw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -169,6 +172,7 @@ body::-webkit-scrollbar-track{
 
 .servico{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .servico::before{
@@ -184,9 +188,9 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
 .produto{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .produto::before{
@@ -204,6 +208,7 @@ body::-webkit-scrollbar-track{
 
 .home{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .home::before{
@@ -219,9 +224,10 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
+/* Fim icones */
 
 .header-layout .content .logo-nav li a:hover{
-    border-bottom: 2px solid rgb(235, 235, 235);
+    border-bottom: 2px solid rgb(0, 51, 131);
 }
 
 
@@ -231,13 +237,12 @@ body::-webkit-scrollbar-track{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
 }
 
 .header-layout .content .search input{
     width: 600px;
     height: 40px;
-    border: solid 2px;
+    border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 20px;
@@ -245,7 +250,7 @@ body::-webkit-scrollbar-track{
 
 .header-layout .content .search input:focus{
     box-shadow: 0 0 0 0;
-    border: solid 2px;
+    border: 0 none;
     outline: 0;
 }
 
@@ -257,14 +262,13 @@ body::-webkit-scrollbar-track{
 .header-layout .content .search a{
     width: 40px;
     height: 40px;
-    background-color:rgb(201, 50, 39);
+    background-color:rgb(255, 131, 0);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: rgb(201, 50, 39) solid 3px;
 }
 
 .header-layout .content .search a:hover{
-    background-color:rgb(255, 0, 0);
+    background-color:rgb(255, 177, 94);
 }
 
 .header-layout .content .search a::before{
@@ -289,8 +293,8 @@ body::-webkit-scrollbar-track{
 .footer-layout{
     grid-area: FL;
     height: 500px;
-    background: #ed4d35;
-    background: linear-gradient(180deg, #ce432d 18%, #ed4d35);
+    background: rgb(0, 163, 180);
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
     padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;
