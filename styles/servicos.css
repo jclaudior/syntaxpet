@@ -19,20 +19,31 @@
     
 }
 
+.navegacao ul {
+    margin: 20px;
+    /* height: 300px; */
+    width: 250px;
+}
+
 .navegacao a {
     text-decoration: none;
     color:rgb(0, 0, 73);
     font-size: 20px;
     font-weight: bold;
+    padding: 20px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 
 .navegacao li {
-    padding: 20px;
-    cursor: pointer;
+    width: 250px;
 }
 
 .navegacao li:hover {
     background-image: linear-gradient(to right, rgb(129, 217, 252) , rgb(0, 132, 255));
+    border-bottom-left-radius: 20px;
+    border-radius: 20px;
 }
 
 .navegacao ul {
