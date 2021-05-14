@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 body{
     display: grid;
     grid-template-areas: 
@@ -21,7 +20,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 body::-webkit-scrollbar-track{
-    background-color: #00a3b4;
+    background-color: rgb(0, 163, 180);
 }
 
 .header-layout{
@@ -54,10 +53,6 @@ body::-webkit-scrollbar-track{
 }
 .header-layout .content .logo-nav nav{
     width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 23px;
 }
 
 .header-layout .content .logo-nav ul{
@@ -70,7 +65,7 @@ body::-webkit-scrollbar-track{
 }
 
 .header-layout .content .logo-nav li{
-    margin: 5px 5px;
+    margin: 5px 0px;
     padding: 0px;
 }
 
@@ -78,18 +73,21 @@ body::-webkit-scrollbar-track{
     text-decoration: none;
     padding: 10px 5px;
     border-radius: 5px;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     animation-delay: all 3s;
 }
 
-.carrinho{
+/* Icones */
+
+.faleconosco{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.carrinho::before{
+.faleconosco::before{
     content: "";
-    background: url("../images/carrinho.png");
+    background: url("../images/faleconoscow.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -100,14 +98,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
-.cadastro{
+.nossaslojas{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.cadastro::before{
+.nossaslojas::before{
     content: "";
-    background: url("../images/user.png");
+    background: url("../images/nossaslojasw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -118,13 +116,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.assinatura{
+.campanhassociais{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.assinatura::before{
+.campanhassociais::before{
     content: "";
-    background: url("../images/assinatura.png");
+    background: url("../images/campanhassociaisw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -137,6 +136,7 @@ body::-webkit-scrollbar-track{
 
 .adocao{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .adocao::before{
@@ -152,13 +152,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.contato{
+.veterinaria{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.contato::before{
+.veterinaria::before{
     content: "";
-    background: url("../images/telefone.png");
+    background: url("../images/veterinariaw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -171,6 +172,7 @@ body::-webkit-scrollbar-track{
 
 .servico{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .servico::before{
@@ -186,9 +188,9 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
 .produto{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .produto::before{
@@ -206,6 +208,7 @@ body::-webkit-scrollbar-track{
 
 .home{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .home::before{
@@ -221,9 +224,10 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
+/* Fim icones */
 
 .header-layout .content .logo-nav li a:hover{
-    border-bottom: 2px solid #003383;
+    border-bottom: 2px solid rgb(0, 51, 131);
 }
 
 
@@ -258,13 +262,13 @@ body::-webkit-scrollbar-track{
 .header-layout .content .search a{
     width: 40px;
     height: 40px;
-    background-color:#ff8300;
+    background-color:rgb(255, 131, 0);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .header-layout .content .search a:hover{
-    background-color:#ffb15e;
+    background-color:rgb(255, 177, 94);
 }
 
 .header-layout .content .search a::before{
@@ -285,8 +289,6 @@ body::-webkit-scrollbar-track{
 .content-layout{
     grid-area: CL;   
 }
-
-
 
 .footer-layout{
     grid-area: FL;
