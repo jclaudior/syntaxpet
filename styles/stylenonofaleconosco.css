@@ -1,0 +1,111 @@
+/* Fale conosco banner fale conosco*/
+
+.contFaleC{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.bannerFaleC{
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+    position: relative;
+    border-radius: 10px;
+    height: 550px;
+    width: 300px;
+    left: 5%;
+    text-align: center;
+}
+
+.tituloLabel{
+    display: flex;
+    align-items: center;
+    background: orange;
+}
+
+.escritaNorm{
+    text-align: center;
+    letter-spacing: 2;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Fale conosco banner contate nos*/
+
+.bannerContatoE{
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+    position: relative;
+    border-radius: 10px;
+    height: 550px;
+    width: 850px;
+    right: 5%;
+    text-align: center;
+}
+
+.txtFaleC{
+    width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+    outline: none;
+}
+
+.selectFaleC{
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;
+    background-position: 218px center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 10px;
+    outline: none;
+}
+
+.txtAreaFaleC{
+    width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 10px;
+    outline: none;
+}
+
+#btnEnviarFaleC{
+    background-color:rgb(255, 131, 0);
+    border-radius: 10px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    width: 80px;
+    outline: none;
+}
+
+/* Titulos Faleconosco */
+
+.txttitulosFaleC{
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.fundotituloFaleC{
+    background: rgb(255, 131, 0);
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
