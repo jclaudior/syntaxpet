@@ -61,7 +61,7 @@ body::-webkit-scrollbar-track{
     list-style:none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header-layout .content .logo-nav li{
@@ -232,15 +232,16 @@ body::-webkit-scrollbar-track{
 
 
 .header-layout .content .search{
-    width: 100%;
+    width: 80%;
     height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
+	padding-left: 20%;
 }
 
 .header-layout .content .search input{
-    width: 600px;
+    width: 800px;
     height: 40px;
     border: none;
     border-top-left-radius: 5px;
