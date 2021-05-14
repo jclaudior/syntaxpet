@@ -1,0 +1,289 @@
+/* Banner Home */
+
+.areabanner{
+    padding-top: 20px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    width: 900px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 900px;
+    height: 300px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 900px;
+    margin-top: 270px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(255, 131, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: rgb(255, 131, 0);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin-top: 270px;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(255, 131, 0);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: rgb(255, 131, 0);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: rgb(255, 131, 0);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: rgb(255, 131, 0);
+}
+
+input[type=radio]{
+	display: none;
+}
+
+/* Lista de produtos Home */
+
+.listaprod {
+    position: relative;
+    height: 300px;
+    width: 1000px;
+    top: 10px;
+    left: calc(50% - 500px);
+    display: flex;
+}
+
+.cardprod {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: rgb(0, 163, 180);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem rgb(70, 70, 70);
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+  
+.cardprod:not(:first-child) {
+    margin-left: -50px;
+}
+  
+.cardprod:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+  
+.cardprod:hover ~ .cardprod {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+  
+.titleprod {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+/* Animacao */
+
+.cardprod::before, .cardprod::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardprod::before{
+    transform: scaleX(0);
+    height: 10px;
+    width: 170px;
+    background-color: rgb(255, 131, 0);
+    border-radius: 0px 0px 10px 10px;
+    top: 270px;
+}
+
+.cardprod::after{
+    transform: scaleX(0);
+    height: 10px;
+    width: 170px;
+    background-color: rgb(255, 131, 0);
+    border-radius: 0px 0px 10px 10px;
+    top: 270px;
+}
+
+.cardprod:hover::before{
+    transform: scaleX(1);
+}
+
+.cardprod:hover::after{
+    transform: scaleX(1);
+}
+
+.contprod{
+    height: 250px;
+    width: 170px;
+    padding-top: 60px;
+    border-radius: 10px;
+}
+
+.contprod .img{
+    position: relative;
+    height: 200px;
+    width: 170px;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+/* Lista de serviços Home */
+
+.list-serv-area{
+    width: 100%;
+	height: 310px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+	background-color: #fff;
+    position: relative;
+}
+
+.cardserv{
+	position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardsserv{
+	width: 510px;
+	height: 310px;
+    background: rgb(0, 163, 180);
+    border-radius: 10px;
+}
+
+.cardsserv img{
+	position: relative;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.cardsserv::after{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardsserv::after{
+    transform: scaleX(0);
+    height: 10px;
+    width: 510px;
+    background-color: rgb(255, 131, 0);
+    border-radius: 0px 0px 10px 10px;
+    top: -10px;
+}
+
+.cardsserv:hover::after{
+    transform: scaleX(1);
+}
+
+.titleserv{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+}
+
+/* Titulos Home */
+
+.txttitulos{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.fundotitulo{
+    background: linear-gradient(180deg, rgb(5, 149, 166) 18%, rgb(0, 163, 180)100%);
+    border-radius: 50px;
+    margin-left: 550px;
+    margin-right: 550px;
+}

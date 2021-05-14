@@ -247,3 +247,4 @@ sliderAcessoriosDesc.addEventListener('mousemove', (e) => {
   const walk = (y - startYAcessoriosDesc) * 3; //scroll-fast
   sliderAcessoriosDesc.scrollTop = scrollTopAcessoriosDesc - walk;
 });
+
