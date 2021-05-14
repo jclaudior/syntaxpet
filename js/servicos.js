@@ -14,3 +14,14 @@ function navegar(e) {
         behavior: "smooth"
     })
 }
+
+document.addEventListener('scroll', (e) => {
+    const posicao = 1750
+    const nav =  document.querySelector('.navegacao')
+    if (window.pageYOffset >= posicao){
+        nav.style.opacity = "0"
+    }
+    else {
+        nav.style.opacity = "1" 
+    }
+})
