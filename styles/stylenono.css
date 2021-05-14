@@ -209,7 +209,7 @@ input[type=radio]{
 
 .list-serv-area{
     width: 100%;
-	height: 310px;
+	height: 27%;
     padding-top: 10px;
     padding-bottom: 20px;
 	background-color: #fff;
@@ -217,14 +217,14 @@ input[type=radio]{
 }
 
 .cardserv{
-	position: relative;
+	
     display: flex;
     justify-content: space-around;
 }
 
 .cardsserv{
-	width: 33%;
-	height: 30%;
+	width: 25%;
+	height: 100%;
     border-radius: 10px;
 }
 
