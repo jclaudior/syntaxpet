@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+#layout{
+    width: 100%; 
+   
+    text-align: center; 
+    height: 600px;
+    background-image:url('../images/bulldog-1047518_1920.jpg');
+}
+
+
+:root{
+    --white: #fafafa;
+    --blue: #00348a;
+    --blue-light: #0bbbd6;
+}
+
+
+
+
+.container{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5% 0%;
+    
+}
+
+
+.container form{
+    background: var(--blue-light);
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem; 
+  
+    border-radius: 0.5rem;
+}
+
+.container form label {
+    color: var(--white);
+    font-size: 1. 3rem;
+    font-weight: 600;
+}
+
+.container form input {
+    border: 0;
+    outline: 0;
+    margin: 0% 0px;
+    padding: 10px;
+    font-size: 1. 2rem;
+    font-weight: 300;
+    border-radius: 0. 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.container form input:focus{
+  box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.container form button {
+    cursor:pointer;
+    margin-top: 3%;
+    border: 0;
+    outline: 0;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: var(--blue);
+    color:var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.container form button:hover{
+    color: var(--blue);
+    background: var(--white);
+}
+
+
+.container .result-box{
+    
+   margin-top: 5%;
+   background: var(--white);
+   width: 20%;
+   padding: 2rem;
+   border-radius: 00.5rem;
+   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+   color: #00348a;
+}
+
+.container .result-box h2{
+    font-weight: 500;
+    font-size: 1. 5rem;
+    margin: 5% 0%;
+}
+
+.container .result-box span{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+    
+
+.container #btnRestart{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: var(--white);
+    color: var(--blue);
+    padding: 1rem;
+    margin-top: 3%;
+    font-size: 1 .3rem;
+    border-radius: 0 .3rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+
+    /*display: none; */
+}
+ 
+.container #btnRestart:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+
+
+
+.form-input{
+    margin: 10px 0;
+
+}
