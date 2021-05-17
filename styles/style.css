@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 body{
     display: grid;
-    grid-template-areas:
+    grid-template-areas: 
     'HL HL'
     'CL CL'
     'FL FL';
@@ -41,7 +41,7 @@ body::-webkit-scrollbar-track{
 
 .header-layout .content .logo-nav{
     width: 100%;
-    height: 130px;
+    height: 130px;  
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -78,13 +78,16 @@ body::-webkit-scrollbar-track{
     animation-delay: all 3s;
 }
 
-.carrinho{
+/* Icones */
+
+.faleconosco{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.carrinho::before{
+.faleconosco::before{
     content: "";
-    background: url("../images/carrinho.png");
+    background: url("../images/faleconoscow.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -95,14 +98,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
-.cadastro{
+.nossaslojas{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.cadastro::before{
+.nossaslojas::before{
     content: "";
-    background: url("../images/user.png");
+    background: url("../images/nossaslojasw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -113,13 +116,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.assinatura{
+.campanhassociais{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.assinatura::before{
+.campanhassociais::before{
     content: "";
-    background: url("../images/assinatura.png");
+    background: url("../images/campanhassociaisw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -132,6 +136,7 @@ body::-webkit-scrollbar-track{
 
 .adocao{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .adocao::before{
@@ -147,13 +152,14 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-.contato{
+.veterinaria{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
-.contato::before{
+.veterinaria::before{
     content: "";
-    background: url("../images/telefone.png");
+    background: url("../images/veterinariaw.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -166,6 +172,7 @@ body::-webkit-scrollbar-track{
 
 .servico{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .servico::before{
@@ -181,9 +188,9 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
-
 .produto{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .produto::before{
@@ -201,6 +208,7 @@ body::-webkit-scrollbar-track{
 
 .home{
     padding-left: 35px!important;
+    font-size: 20px;
 }
 
 .home::before{
@@ -216,6 +224,7 @@ body::-webkit-scrollbar-track{
     left: 30px;
 }
 
+/* Fim icones */
 
 .header-layout .content .logo-nav li a:hover{
     border-bottom: 2px solid rgb(0, 51, 131);
@@ -224,7 +233,7 @@ body::-webkit-scrollbar-track{
 
 .header-layout .content .search{
     width: 100%;
-    height: 50px;
+    height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -277,9 +286,8 @@ body::-webkit-scrollbar-track{
 }
 
 
-
 .content-layout{
-    grid-area: CL;
+    grid-area: CL;   
 }
 
 .footer-layout{
@@ -320,7 +328,7 @@ body::-webkit-scrollbar-track{
 .creditos ul li{
     list-style: none;
     padding: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;    
 }
 
 .creditos ul li a{
@@ -400,7 +408,7 @@ body::-webkit-scrollbar-track{
         border-right: none;
         border-top: none;
         border-bottom: none;
-
+        
     }
 }
 
@@ -451,7 +459,7 @@ body::-webkit-scrollbar-track{
         border-right: none;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
-
+        
     }
 }
 
@@ -462,8 +470,8 @@ body::-webkit-scrollbar-track{
     .header-layout .content .logo-nav li{
         width: 100%;
         padding: 0px 70px;
-
+        
     }
 
-
+    
 }
