@@ -1,0 +1,54 @@
+.Principal {
+
+}
+.Secundario{
+   
+}
+
+h1{
+color: blue;
+font-style: bold;
+font-family: 'Roboto', sans-serif;
+}
+
+p{
+
+    
+}
+
+.titleNossasLojas{
+border: solid cyan;
+display: flex;
+}
+
+#lojaI{ 
+border: solid orange;
+background: orange;
+height: 100%;
+width: 50%;
+text-align: center;
+
+}
+
+#lojaII{
+    border: solid black;
+    height: 100%;
+    width: 50%;
+}
+
+.titleNossasLojasII{
+    border: solid red;
+    display: flex;
+    }
+        
+#lojaIII{
+    border: solid orange;
+    height: 100%;
+    width: 50%;
+}
+        
+ #lojaIV{
+    border: solid black;
+    height: 100%;
+    width: 50%;
+}
