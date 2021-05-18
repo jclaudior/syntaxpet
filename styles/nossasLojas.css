@@ -6,7 +6,7 @@
 }
 
 h1{
-color: blue;
+color: rgb(0, 51, 131);
 font-style: bold;
 font-family: 'Roboto', sans-serif;
 }
@@ -17,38 +17,44 @@ p{
 }
 
 .titleNossasLojas{
-border: solid cyan;
+border: solid;
 display: flex;
 }
 
 #lojaI{ 
-border: solid orange;
-background: orange;
-height: 100%;
-width: 50%;
-text-align: center;
+    border: solid;
+    height: 100%;
+    width: 50%;
+    background: rgb(255, 131, 0);
+    text-align: center;
 
 }
 
 #lojaII{
-    border: solid black;
+    border: solid ;
+    background: rgb(255, 131, 0);
     height: 100%;
     width: 50%;
+    text-align: center;
 }
 
 .titleNossasLojasII{
-    border: solid red;
+    border: solid ;
     display: flex;
     }
         
 #lojaIII{
-    border: solid orange;
+    border: solid;
     height: 100%;
     width: 50%;
+    background: rgb(255, 131, 0);
+    text-align: center;
 }
         
  #lojaIV{
-    border: solid black;
+    border: solid;
     height: 100%;
     width: 50%;
+    background: rgb(255, 131, 0);
+    text-align: center;
 }
