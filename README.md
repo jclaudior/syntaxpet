@@ -2,6 +2,8 @@
 
 Projeto de um Petshop em HTML, CSS e JS Puro
 
+https://jclaudior.github.io/syntaxpet/
+
 ##HOME 
 <img src="https://uploaddeimagens.com.br/images/003/327/474/full/home.png?1625791353">
 
